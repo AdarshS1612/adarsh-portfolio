@@ -97,10 +97,16 @@ modalCloses.forEach((modalClose)=>{
     })
 })
 
+// (() => {
+//     const swiper = document.querySelector(".swiper");
+//     if (!swiper) {
+//       return;
+//     }})
 /*==================== PORTFOLIO SWIPER  ====================*/
-let swiperPortfolio = new Swiper(".portfolio__container", {
-    cssMode: true,
+let swiper = new Swiper(".swiper-container", {
     loop: true,
+    grabCursor:true,
+    spaceBetween:48,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -109,8 +115,6 @@ let swiperPortfolio = new Swiper(".portfolio__container", {
       el: ".swiper-pagination",
       clickable:true,
     },
-    // mousewheel: true,
-    // keyboard: true,
   });
 
 /*==================== TESTIMONIAL ====================*/
@@ -127,13 +131,7 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
       clickable:true,
       dynamicBullets: true,
     },
-//     breakpoints:{
-//    568:{
-//        slidersPreView: 2,
-//    }
-//     }
-    // mousewheel: true,
-    // keyboard: true,
+
   });
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
